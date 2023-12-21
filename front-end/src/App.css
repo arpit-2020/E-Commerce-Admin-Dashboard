@@ -1,0 +1,384 @@
+.Product{
+  display: grid;
+  justify-items: center;
+  margin-bottom: 1rem;
+}
+.heading{
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem
+}
+.Product-1{
+  display: grid;
+  justify-items: center;
+  /* grid-template-columns: 1fr 1fr; */
+  margin-bottom: 1rem;
+}
+/* ---------------------------------------------------------------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500&family=Lora:wght@400;500&family=Poppins:wght@400;600&display=swap");
+
+/* plz subsribe to thapa technical channel 
+          https://www.youtube.com/thapatechnical
+         */
+              /* <div className="btn-container"> */
+.btn-container{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --text-clr: #4a5c6c;
+  --bg-clr: #f2f4fc;
+  --border-clr: rgb(156, 176, 193);
+}
+
+html {
+  font-size: 60%;
+}
+
+body {
+  background-color: var(--bg-clr);
+}
+
+.list-info h2 {
+  font-family: "Lora", serif;
+  color: #28282B;
+  font-size: 2rem;
+  transition: all 0.5s linear;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  /* width: 25rem; */
+  min-width: 12rem;
+  max-height: 22rem;
+  margin: 1rem 0;
+  border-radius: 1rem;
+  transition: all 0.3s linear;
+}
+
+/* resuable code  */
+.container {
+  max-width: 140rem;
+  margin: auto;
+  padding: 3rem;
+  margin-bottom: 2rem;
+}
+
+.grid {
+  width: 100%;
+  display: grid;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  gap: 1.5rem
+  /* padding: 4rem; */
+
+}
+
+.grid-4-col {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+  width: 25rem;
+  max-width: 25rem;
+  min-height: 28rem;
+  border-color: white;
+  /* background-color: black; */
+  /* padding: 2rem; */
+  border-radius: 1rem;
+  /* text-decoration: none; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* search css  */
+.search-section {
+  margin: auto;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+.search-section h2{
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+input {
+  width: 30rem;
+  border-radius: 100px;
+  border: none;
+  border: 1px solid var(--border-clr);
+  padding: 1rem 2rem;
+  font-size: 1.8rem;
+  
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  outline: none;
+  margin-top: 2rem;
+}
+
+.card-error p {
+  color: red;
+  margin-top: 0rem;
+  font-size: 1.1rem;
+}
+
+/* Single Movie css code  */
+
+.movie-section {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.loading {
+  font-size: 3.2rem;
+  color: var(--text-clr);
+  text-align: center;
+}
+
+.movie-section .loading {
+  font-size: 3.2rem;
+  color: var(--bg-clr);
+  text-align: center;
+}
+
+.movie-card {
+  min-width: 35rem;
+  width: 50vw;
+
+  background-color: var(--bg-clr);
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 0.6fr 1fr;
+  /* align-items: center; */
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 4rem;
+  margin-bottom: 20rem;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+.movie-card img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: 0;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  max-height: 50rem;
+  height: auto;
+}
+
+.movie-card .title {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.card-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+  
+}
+
+
+.card-text {
+  font-size: 1.8rem;
+}
+
+.list-info {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 3rem 1rem;
+  text-decoration: none;
+  color: var(--text-clr);
+  border: 0.2rem solid var(--text-clr);
+  font-size: 1.8rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s linear;
+}
+
+
+.list-info:hover h2 {
+  transform: translateY(0.6rem);
+  display: block;
+}
+
+.list-info:hover img {
+  transform: scale(1.05);
+}
+
+.back-btn {
+  padding: 0.5rem 2.2rem;
+  font-size: 1.2rem;
+  font-weight: 4rem;
+  text-decoration: none;
+  border-radius: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f2f4fc;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: #212529;
+  transition: transform 0.3s ease-out;
+}
+.back-btn:hover{
+  color: #f2f4fc;
+  transform: scale(1.1);
+}
+
+
+/* responsive code   */
+@media (max-width: 1200px) {
+  .container {
+    margin: auto;
+    max-width: 110rem;
+  }
+  .grid-4-col {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 998px) {
+  .container {
+    max-width: 90rem;
+    margin: auto;
+  }
+  .grid-4-col {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  input {
+    width: 25rem;
+  }
+
+  .movie-section {
+    height: auto;
+    padding: 4.8rem 0;
+  }
+
+  .movie-card {
+    grid-template-columns: 1fr;
+  }
+
+  .card-content {
+    padding-left: 2rem;
+  }
+
+  .back-btn {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 70rem;
+    margin: auto;
+  }
+  .grid-4-col {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+
+.loader {
+  display: flex;
+}
+
+.loader-dot {
+  width: 10px;
+  height: 10px;
+  margin: 0 6px;
+  background-color: #00040b; /* Google Blue */
+  border-radius: 50%;
+  animation: scale-up-down 1s ease-in-out infinite;
+}
+
+@keyframes scale-up-down {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+}
+/* Footer Styles */
+.footer {
+  margin-top: 20vw;
+  background-color: black;
+  padding: 1px 0;
+  color: white;
+  width: 100%;
+  margin-top: 30vw;
+  position: relative; 
+
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  /* flex-wrap: wrap; */
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  /* padding-bottom: 20px; */
+}
+
+.footer-section {
+  flex: 1;
+  max-width: 300px;
+  margin-top: 10px;
+}
+
+.footer-section h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  line-height: 1.6;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 1rem;
+}
