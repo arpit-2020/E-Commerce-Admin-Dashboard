@@ -52,7 +52,7 @@ The core functionality revolves around product management, offering features lik
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/satyam4321/MERN-E-Commerce-Dashboard.git
+   git clone https://github.com/arpit-2020/E-Commerce-Admin-Dashboard.git
    cd MERN-E-Commerce-Dashboard.git
 
 2. **Navigate to the Frontend Directory:**
